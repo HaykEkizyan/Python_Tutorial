@@ -1,0 +1,4 @@
+fruits = "apple, banana, orange"
+print(fruits.replace('banana', 'kiwi'))
+print('kiwi' in fruits)
+print(fruits)
