@@ -1,0 +1,7 @@
+temperature = 21
+if temperature > 21:
+    print("It's a warm day") # False
+elif temperature < 21:
+    print("It's a cold day") # False
+else:
+    print("It's a lovely day") # Will print -> It's a lovely day
