@@ -1,4 +1,38 @@
+#1
+
 numbers = (1, 2, 3)
 print(numbers.count(3))   # 1
 print(numbers.index(3))   # 2
 print(numbers.clear())    # 'tuple' object has no attribute 'clear'
+
+
+# 2 
+
+"""
+coordinates = (1, 2, 3)
+x = coordinates[0]
+y = coordinates[1]
+z = coordinates[2]
+"""
+
+# you can write it like
+
+"""
+coordinates = (1, 2, 3)
+x, y, z = coordinates
+"""
+
+#3
+
+coordinates = (1, 2, 3)
+x, y, z = coordinates
+print(x)   #  1
+
+
+#4
+
+coordinates = (1, 2, 3)
+x, y, z = coordinates
+print((x, y, z) == (1, 2, 3))   # True
+
+
