@@ -48,3 +48,10 @@ print([x, y, z] == [1, 2, 3])   # True
 coordinates = [1, 2, 3]
 x, y, z = coordinates
 print((x, y, z) == [1, 2, 3])    # False
+
+
+#7  change to parentheses - line 57
+
+coordinates = [1, 2, 3]
+x, y, z = coordinates
+print((x, y, z) == (1, 2, 3))    # True
