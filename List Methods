@@ -51,3 +51,10 @@ numbers = [5, 2, 1, 7, 4]
 numbers.sort()
 print(numbers)  # [1, 2, 4, 5, 7]
 
+
+# reverse()
+
+numbers = [5, 2, 1, 7, 4]
+numbers.reverse()
+print(numbers)  # [4, 7, 1, 2, 5]
+
