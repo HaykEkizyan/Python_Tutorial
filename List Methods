@@ -12,3 +12,9 @@ numbers.insert(2, 10)
 print(numbers)  # [5, 2, 10, 1, 7, 4]
 
 
+# remove()
+
+numbers = [5, 2, 1, 7, 4]
+numbers.remove(5)
+print(numbers)  # [2, 1, 7, 4]
+
