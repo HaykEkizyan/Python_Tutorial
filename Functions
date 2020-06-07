@@ -1,0 +1,14 @@
+def user():
+    print("Good afternnon")
+    print("Good evening")
+print("Good morning")
+user()
+print("Good night")
+
+"""
+Good morning
+Good afternnon
+Good evening
+Good night
+"""
+
