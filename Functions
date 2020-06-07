@@ -12,3 +12,18 @@ Good evening
 Good night
 """
 
+#2. With parameters
+
+def user(name):
+    print("Good afternnon " + name)
+    print("Good evening " + name)
+print("Good morning")
+user("Hayk")
+print("Good night")
+
+"""
+Good morning 
+Good afternnon Hayk
+Good evening Hayk
+Good night
+"""
