@@ -102,3 +102,15 @@ user(first_name="Ekizyan", "Hayk")
                                ^
 SyntaxError: positional argument follows keyword argument
 """
+
+#6.  return staement
+
+def square(number):
+    return number ** number
+print(square(3))  # 27
+
+#6.1
+
+def square(number):
+    return number ** number
+    print(square(3))   # no output
