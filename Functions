@@ -34,7 +34,7 @@ Good night
 
 def user(name):
     print("Good afternnon " + name)
-    print("Good evening " + name)
+    print(f"Good evening {name}")
 print("Good morning")
 user("Hayk")
 user("Anna")
