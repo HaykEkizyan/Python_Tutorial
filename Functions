@@ -48,3 +48,23 @@ Good afternnon Anna
 Good evening Anna
 Good night
 """
+
+#4. With two arguments
+
+def user(first_name, last_name):
+    print("Good afternnon " + first_name + " " + last_name)
+    print(f"Good evening {first_name} {last_name}")
+print("Good morning")
+user("Hayk", "Ekizyan")
+user("Anna", "Grigoryan")
+print("Good night")
+
+"""
+Good morning
+Good afternnon Hayk Ekizyan
+Good evening Hayk Ekizyan
+Good afternnon Anna Grigoryan
+Good evening Anna Grigoryan
+Good night
+"""
+
