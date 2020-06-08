@@ -6,3 +6,15 @@ print(None == None)  #  True
 
 print(None)  #  None
 
+#1.2 The None object is returned by any function that doesn't explicitly return anything else.
+
+def some_func():
+    print('Hi!')
+var = some_func()
+print(var)
+
+"""
+Hi!
+None
+"""
+
