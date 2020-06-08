@@ -1,0 +1,9 @@
+#1. We can input integer and output our entered integer, 
+
+age = int(input("Age: "))
+print(age)  # 30 -> 30
+
+#1.1 but th value is string it'll shows value error
+
+age = int(input("Age: "))
+print(age)  # l -> ValueError: invalid literal for int() with base 10: 'l'
