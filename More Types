@@ -18,3 +18,11 @@ Hi!
 None
 """
 
+#1.3 
+
+foo = print()
+if foo == None:
+    print(1)
+else:
+    print(2)  #  1
+    
