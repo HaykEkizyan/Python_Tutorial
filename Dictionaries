@@ -35,3 +35,16 @@ bad_dict = {
 }
 print(bad_dict[[1, 2, 3]])  # TypeError: unhashable type: 'list'
 
+
+#3 We can change values 
+
+squares = {
+    1: 1,
+    2: 4,
+    3: "error",
+    4: 16
+}
+squares[8] = 64
+squares[3] = 9
+print(squares)  # {1: 1, 2: 4, 3: 9, 4: 16, 8: 64}
+
