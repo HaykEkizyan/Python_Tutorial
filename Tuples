@@ -1,3 +1,12 @@
+"""
+Tuples are very similar to lists, except that they are immutable (they cannot be changed).
+Also, they are created using parentheses, rather than square brackets.
+Trying to reassign a value in a tuple causes a TypeError. 
+  >>>
+  TypeError: 'tuple' object does not support item assignment
+  >>>
+"""
+
 #1
 
 numbers = (1, 2, 3)
