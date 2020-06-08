@@ -21,3 +21,8 @@ primary = {
 
 print(primary.get("red")) # [255, 0, 0]
 print(primary["yellow"])  # KeyError: 'yellow'
+
+#2.1 
+
+test = { }
+print(test[0])  # KeyError: 0
