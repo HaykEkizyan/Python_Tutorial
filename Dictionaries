@@ -26,3 +26,12 @@ print(primary["yellow"])  # KeyError: 'yellow'
 
 test = { }
 print(test[0])  # KeyError: 0
+
+
+#2.3 Only immutable objects can be used as keys to dictionaries. Immutable objects are those that can't be changed.
+
+bad_dict = {
+    [1, 2, 3]: "one two three"
+}
+print(bad_dict[[1, 2, 3]])  # TypeError: unhashable type: 'list'
+
