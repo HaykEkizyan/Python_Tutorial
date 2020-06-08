@@ -22,3 +22,16 @@ except ValueError:
 2. L -> Invalid value
 
 
+#3. We can add another errors. For example we cannot divide to zero
+
+try:
+    age = int(input("Age: "))
+    income = 20000
+    risk = income / age
+    print(age)
+except ZeroDivisionError:
+    print('Age cannot be 0.')
+except ValueError:
+    print('Invalid value')   # 0 -> Age cannot be 0.
+    
+    
