@@ -108,4 +108,19 @@ nums = [55, 44, 33, 22, 11]
 if any([i % 2 == 0 for i in nums]):
     print("At least one is even")         #  At least one is even
     
+#8.2 The function enumerate can be used to iterate through the values and indices of a list simultaneously.
+
+nums = [55, 44, 33, 22, 11]
+for v in enumerate(nums):
+    print(v)                             
+"""
+(0, 55)
+(1, 44)
+(2, 33)
+(3, 22)
+(4, 11)
+"""
+
+
+
 
