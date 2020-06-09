@@ -72,4 +72,9 @@ print(squares[::-1])
 """
 
 
+#7 List comprehensions are a useful way of quickly creating lists whose contents obey a simple rule.
+   List comprehensions are inspired by set-builder notation in mathematics.
+   
+cubes = [i**3 for i in range(5)]
+print(cubes)   #  [0, 1, 8, 27, 64]
 
