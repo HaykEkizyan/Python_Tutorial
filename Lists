@@ -85,3 +85,9 @@ cubes = [i**2 for i in range(10) if i**2 % 2 == 0]
 print(cubes)   #  [0, 4, 16, 36, 64]
 
 
+#7.1 
+
+cubes = [i for i in range(20) if i % 3 == 0]
+print(cubes)    #   [0, 3, 6, 9, 12, 15, 18]
+
+
