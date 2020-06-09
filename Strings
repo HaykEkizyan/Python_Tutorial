@@ -66,6 +66,16 @@ print("This is a sentence".endswith("This is"))      #   False
 print("This is a sentence".endswith("ence"))         #   True
 print("This is a sentence".endswith("Sentence"))     #   False
 
+#4.4 To change the case of a string, you can use lower and upper.
+
+print("This is a sentence".upper())   #   THIS IS A SENTENCE
+print("This is a sentence".lower())   #   this is a sentence
+
+#4.5 The method split is the opposite of join, turning a string with a certain separator into a list.
+
+print("spam, eggs, ham".split(","))  #   ['spam', ' eggs', ' ham']
+
+
 
 
 
