@@ -42,3 +42,17 @@ print(squares[7:])
 [49, 64, 81]
 """
 
+#5 List slices can also have a third number, representing the step, to include only alternate values in the slice.
+   [2:8:3] will include elements starting
+
+squares = [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+print(squares[2:8:3])
+print(squares[2::3])
+print(squares[::2])
+"""
+[4, 25]
+[4, 25, 64]
+[0, 4, 16, 36, 64]
+"""
+
+
