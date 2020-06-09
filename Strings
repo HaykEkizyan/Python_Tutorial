@@ -46,3 +46,26 @@ print(str)   # 7, 9, 5
 
 
 
+#4 String Functions - Python contains many useful built-in functions and methods to accomplish common tasks.
+
+#4.1 join - joins a list of strings with another string as a separator.
+
+print(";".join(["spam", "eggs", "ham"]))   #  spam;eggs;ham
+
+#4.2 replace - replaces one substring in a string with another.
+
+print("Hello ME".replace("ME", "world"))   #  Hello world
+print("Hello ME".replace("Me", "world"))   #  Hello ME
+
+#4.3 startswith and endswith - determine if there is a substring at the start and end of a string, respectively.
+
+print("This is a sentence".startswith("This is"))    #   True
+print("This is a sentence".startswith("This was"))   #   False
+
+print("This is a sentence".endswith("This is"))      #   False
+print("This is a sentence".endswith("ence"))         #   True
+print("This is a sentence".endswith("Sentence"))     #   False
+
+
+
+
