@@ -9,3 +9,13 @@ print(abs(0, -2, 3, 15,78))  # TypeError: abs() takes exactly one argument (5 gi
 print(abs(2))               # 2
 print(abs(-2))              # 2
 
+#3 To round a number to a certain number of decimal places, use round.
+
+print(round(2.8))           # 3
+print(round(2.2))           # 2
+print(round(2.5))           # 2
+print(round(2.500000000000001))       # 3 (13 zeroes)     ?????
+print(round(2.5000000000000001))      # 2 (14 zeroes)     ?????
+
+
+
