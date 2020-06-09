@@ -1,0 +1,5 @@
+#1 To find the maximum or minimum of some numbers or a list, you can use max or min.
+
+print(min(0, -2, 3, 15,78))   # -2
+print(max(0, -2, 3, 15,78))   # 78
+
