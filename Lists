@@ -31,3 +31,13 @@ for row in matrix:
         8
         9
        """
+
+#4 If the first number in a slice is omitted, it is taken to be the start of the list. If the second number is omitted, ...
+
+squares = [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+print(squares[:7])
+print(squares[7:])
+"""
+[0, 1, 4, 9, 16, 25, 36]
+[49, 64, 81]
+"""
