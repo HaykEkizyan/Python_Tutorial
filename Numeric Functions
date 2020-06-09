@@ -3,3 +3,9 @@
 print(min(0, -2, 3, 15,78))   # -2
 print(max(0, -2, 3, 15,78))   # 78
 
+#2 To find the distance of a number from zero (its absolute value), use abs.
+
+print(abs(0, -2, 3, 15,78))  # TypeError: abs() takes exactly one argument (5 given)
+print(abs(2))               # 2
+print(abs(-2))              # 2
+
