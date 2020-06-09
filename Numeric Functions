@@ -17,5 +17,9 @@ print(round(2.5))           # 2
 print(round(2.500000000000001))       # 3 (13 zeroes)     ?????
 print(round(2.5000000000000001))      # 2 (14 zeroes)     ?????
 
+#4 To find the total of a list, use sum.
 
-
+print(sum(1, 2, 3, 4, 5))                 # TypeError: sum() takes at most 2 arguments (5 given)
+print(sum([1, 2, 3, 4, 5]))               # 15 
+print(sum([1, 2, 3, 4, 5] + [1, 2]))      # 18
+print(sum([1, 2, 3, 4, 5] + 1))           # TypeError: can only concatenate list (not "int") to list
