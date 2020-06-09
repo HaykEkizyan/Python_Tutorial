@@ -101,3 +101,11 @@ nums = [55, 44, 33, 22, 11]
 if all([i > 10 for i in nums]):
     print("All larger than 5")            #  All larger than 5
 
+#8.1.1
+
+nums = [55, 44, 33, 22, 11]
+
+if any([i % 2 == 0 for i in nums]):
+    print("At least one is even")         #  At least one is even
+    
+
