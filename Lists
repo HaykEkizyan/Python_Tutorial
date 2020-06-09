@@ -78,3 +78,10 @@ print(squares[::-1])
 cubes = [i**3 for i in range(5)]
 print(cubes)   #  [0, 1, 8, 27, 64]
 
+
+#8 A list comprehension can also contain an if statement to enforce a condition on values in the list.
+
+cubes = [i**2 for i in range(10) if i**2 % 2 == 0]
+print(cubes)   #  [0, 4, 16, 36, 64]
+
+
