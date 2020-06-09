@@ -91,3 +91,13 @@ cubes = [i for i in range(20) if i % 3 == 0]
 print(cubes)    #   [0, 3, 6, 9, 12, 15, 18]
 
 
+
+#8 List Functions
+
+#8.1 Often used in conditional statements, all and any take a list as an argument, and return True if all 
+     or any (respectively) of their arguments evaluate to True (and False otherwise).
+     
+nums = [55, 44, 33, 22, 11]
+if all([i > 10 for i in nums]):
+    print("All larger than 5")            #  All larger than 5
+
