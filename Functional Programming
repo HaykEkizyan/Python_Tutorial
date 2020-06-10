@@ -93,6 +93,10 @@ def my_func(f, arg):
 my_func(lambda x: 2*x*x, 5)
 
 
+Lambda functions aren't as powerful as named functions.
+They can only do things that require a single expression - usually equivalent to a single line of code.
+
+
 #3.1.0 named function
 
 def polynomial(x):
@@ -103,8 +107,13 @@ print(polynomial(-4))                    #  0
 
 print((lambda x: x**2 +5*x +4) (-4))     #  0
 
+print((lambda x: x*x) (8))               #  64
 
- 
+#3.1.2 Lambda functions can be assigned to variables, and used like normal functions.
+
+double = lambda x: x * 2
+print(double(7))                         #  14
+
 
 
 
