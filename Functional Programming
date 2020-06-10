@@ -32,3 +32,17 @@ def mult(x):    # func -> mult
 
 print(test(mult, 3))    #  81
 
+
+#2 Pure Functions
+Functional programming seeks to use pure functions. Pure functions have no side effects, and return a value that depends only on their arguments.
+
+#2.1 
+
+def pure_function(x, y):
+    temp = x + 2 * y
+    return temp / (2 * x + y)
+
+print(pure_function(2, 4))    #  1.25
+
+
+
