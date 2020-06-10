@@ -114,6 +114,8 @@ print((lambda x: x*x) (8))               #  64
 double = lambda x: x * 2
 print(double(7))                         #  14
 
-
+triple = lambda x: x * 3
+add = lambda x, y: x + y
+print(add(triple(3), 4))                 #  13
 
 
