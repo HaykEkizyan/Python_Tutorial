@@ -44,5 +44,20 @@ def pure_function(x, y):
 
 print(pure_function(2, 4))    #  1.25
 
+#2.2  It's a pure function
 
+def func(x):
+  y = x**2
+  z = x + y
+  return z
+  
+  
+#2.3  It' not a pure function
 
+some_list = []
+
+def impure(arg):
+  some_list.append(arg)
+  
+  
+  
