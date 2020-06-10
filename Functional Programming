@@ -1,0 +1,34 @@
+Functional programming is a style of programming that (as the name suggests) is based around functions.
+A key part of functional programming is higher-order functions. 
+ Higher-order functions take other functions as arguments, or return them as results.
+ 
+# 1
+
+def apply_twice(func, arg):   # arg -> 0
+    return func(func(arg))
+
+def add_five(x):    # func -> add_five
+    return x + 5
+
+print(apply_twice(add_five, 0))    #  10
+
+1.1
+
+def apply_twice(func, arg):   # arg -> 10
+    return func(func(arg))
+
+def add_five(x):    # func -> add_five
+    return x + 5
+
+print(apply_twice(add_five, 10))    #  20
+
+1.2
+
+def test(func, arg):   # arg -> 3
+    return func(func(arg))
+
+def mult(x):    # func -> mult
+    return x * x
+
+print(test(mult, 3))    #  81
+
