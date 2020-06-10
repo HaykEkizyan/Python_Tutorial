@@ -85,8 +85,26 @@ and the expression to evaluate and return.
 
 Lambda functions get their name from lambda calculus, which is a model of computation invented by Alonzo Church.
 
+#3.0
+
 def my_func(f, arg):
   return f(arg)
 
 my_func(lambda x: 2*x*x, 5)
+
+
+#3.1.0 named function
+
+def polynomial(x):
+    return x**2 + 5*x + 4
+print(polynomial(-4))                    #  0
+
+#3.1.1 lambda
+
+print((lambda x: x**2 +5*x +4) (-4))     #  0
+
+
+ 
+
+
 
