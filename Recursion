@@ -10,9 +10,25 @@ Furthermore, 1! = 1. This is known as the base case, as it can be calculated wit
 
 Below is a recursive implementation of the factorial function.
 
+# 1 
+
 def factorial(x):
     if x == 1:
         return 1
     else:
         return x * factorial(x - 1)
 print(factorial(5))                   #   120
+
+The base case acts as the exit condition of the recursion.
+
+#2
+
+Recursive functions can be infinite, just like infinite while loops. These often occur when you forget to implement the base case.
+Below is an incorrect version of the factorial function. It has no base case, so it runs until the interpreter runs out of memory and crashes.
+
+def factorial(x):
+    return x * factorial(x - 1)
+print(factorial(5))               #   RecursionError: maximum recursion depth exceeded
+
+
+
