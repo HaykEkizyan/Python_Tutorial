@@ -109,8 +109,21 @@ Hello world!
 =============
 """
 
+#2.1 
+
+Python provides support to wrap a function in a decorator by pre-pending the function definition with a decorator name and the @ symbol.
+If we are defining a function we can "decorate" it with the @ symbol like:
+
+@decor
+def print_text():
+    print("Hello world!")
+    
+This will have the same result as the above code.
+
+def print_text():
+    print("Hello world!")
+print_text = decor(print_text)
 
 
-
-
+A single function can have multiple decorators.
 
