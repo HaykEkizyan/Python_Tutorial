@@ -30,5 +30,12 @@ def factorial(x):
     return x * factorial(x - 1)
 print(factorial(5))               #   RecursionError: maximum recursion depth exceeded
 
+#2.1
+
+def sum_to(x):
+    return x + sum_to(x - 1)
+print(sum_to(5))                  #   RecursionError: maximum recursion depth exceeded
+
+
 
 
