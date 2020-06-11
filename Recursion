@@ -1,0 +1,3 @@
+Recursion is a very important concept in functional programming.
+The fundamental part of recursion is self-reference - functions calling themselves. 
+It is used to solve problems that can be broken up into easier sub-problems of the same type.
