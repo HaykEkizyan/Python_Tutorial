@@ -42,18 +42,24 @@ for i in repeat("5"):
 
 There are many functions in itertools that operate on iterables, in a similar way to map and filter.
 
-accumulate - returns a running total of values in an iterable.
-
 #4.1
 
-from itertools import accumulate
+accumulate - returns a running total of values in an iterable.
 
+from itertools import accumulate
 nums = list(accumulate(range(5)))
 print(nums)                             # [0, 1, 3, 6, 10]
-
 nums = list(accumulate(range(9)))
 print(nums)                             # [0, 1, 3, 6, 10, 15, 21, 28, 36]
 
 
+#4.2
+
+takewhile - takes items from an iterable while a predicate function remains true;
+
+from itertools import takewhile, accumulate
+
+nums = list(accumulate(range(9)))
+print(list(takewhile(lambda x: x <= 13, nums)))         # [0, 1, 3, 6, 10]
 
 
