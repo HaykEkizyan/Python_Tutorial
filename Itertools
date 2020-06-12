@@ -29,3 +29,12 @@ for i in cycle("5"):
     break           # without break it will be infinite
     
     
+#3 repeat
+
+from itertools import repeat
+
+for i in repeat("5"):
+    print(i)        # 5
+    break           # without break it will be infinite
+    
+    
