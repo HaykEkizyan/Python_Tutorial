@@ -6,14 +6,26 @@ The function repeat repeats an object, either infinitely or a specific number of
 
 from itertools import count
 
-#1
+#1 count
+
 for i in count(3):
     print(i)        #  3 4 5 6 7
     if i >= 7:
         break
 
-#1.1
+#1.1 count
+
 for i in count(3):
     print(i)        # 3
     if i >= 1:
         break
+
+#2 cycle
+
+from itertools import cycle
+
+for i in cycle("5"):
+    print(i)        # 5
+    break           # without break it will be infinite
+    
+    
