@@ -42,12 +42,20 @@ print(nums)                            # {2, 1, 4, 5, 6, 7}
 #3
 
 Sets can be combined using mathematical operations.
-The union operator | combines two sets to form a new one containing items in either.
 
-#3.1
+
+#3.1  The union operator | combines two sets to form a new one containing items in either.
 
 first = {1, 2, 3, 4, 5, 6}
 second = {4, 5, 6, 7, 8, 9}
 union = first | second
 print(union)                            # {1, 2, 3, 4, 5, 6, 7, 8, 9}
+
+#3.2  The intersection operator & gets items only in both.
+
+first = {1, 2, 3, 4, 5, 6}
+second = {4, 5, 6, 7, 8, 9}
+union = first & second
+print(union)                            # {4, 5, 6}
+
 
