@@ -84,10 +84,17 @@ print(my_list)                                          # ['foo', 'bar', 'ls', '
 There are also several combinatoric functions in itertool, such as product and permutation.
 These are used when you want to accomplish a task with all possible combinations of some items.
 
+#5.1
+
 from itertools import product, permutations
 letters = ("A", "B")
 print(list(product(letters, range(2))))                 # [('A', 0), ('A', 1), ('B', 0), ('B', 1)]
 print(list(permutations(letters)))                      # [('A', 'B'), ('B', 'A')]
 
+#5.2
 
+from itertools import product
+a = {1, 2}
+print(list(product(range(3), a)))                       # [(0, 1), (0, 2), (1, 1), (1, 2), (2, 1), (2, 2)]            
+print(len(list(product(range(3), a))))                  # 6
 
