@@ -118,7 +118,8 @@ triple = lambda x: x * 3
 add = lambda x, y: x + y
 print(add(triple(3), 4))                 #  13
 
-
+a = (lambda x: x * (x + 1))(6)
+print(a)                                 #  42 
 
 #4 Map & Filter
 The built-in functions map and filter are very useful higher-order functions that operate on lists (or similar objects called iterables).
