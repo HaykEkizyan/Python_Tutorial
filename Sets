@@ -1,3 +1,10 @@
 Sets are data structures, similar to lists or dictionaries. They are created using curly braces, or the set function. 
 They share some functionality with lists, such as the use of in to check whether they contain a particular item.
 
+num_set = {1, 2, 3, 4, 5}
+word_set = set(["spam", "eggs", "sausage"])
+print(3 in num_set)                               #  True
+print("spam" not in word_set)                     #  False
+
+To create an empty set, you must use set(), as {} creates an empty dictionary.
+
