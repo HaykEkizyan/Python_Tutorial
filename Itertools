@@ -98,3 +98,4 @@ a = {1, 2}
 print(list(product(range(3), a)))                       # [(0, 1), (0, 2), (1, 1), (1, 2), (2, 1), (2, 2)]            
 print(len(list(product(range(3), a))))                  # 6
 
+
