@@ -1,0 +1,3 @@
+Sets are data structures, similar to lists or dictionaries. They are created using curly braces, or the set function. 
+They share some functionality with lists, such as the use of in to check whether they contain a particular item.
+
