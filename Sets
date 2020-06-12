@@ -8,3 +8,9 @@ print("spam" not in word_set)                     #  False
 
 To create an empty set, you must use set(), as {} creates an empty dictionary.
 
+letters = {"a", "b", "c", "d"}
+if "e" not in letters:
+    print(1)
+else:
+    print(2)                                      # 1
+    
