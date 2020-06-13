@@ -37,7 +37,8 @@ class Cat:
 felix = Cat("ginger", 4)
 print(felix.color)                            #  ginger
 
-
+In the example above, the __init__ method takes two arguments and assigns them to the object's attributes. 
+The __init__ method is called the class constructor.
 
 
 
