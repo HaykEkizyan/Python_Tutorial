@@ -65,11 +65,11 @@ print(point.x)                                # 11
 class Person:
     def __init__(self, name):
         self.name = name
-
     def talk(self):
         print(f"Hi, I'm {self.name}")
-
-john = Person("Hayk Ekizyan")
-john.talk()                                   # Hi, I'm Hayk Ekizyan
+me = Person("Hayk Ekizyan")
+me.talk()                                     # Hi, I'm Hayk Ekizyan
+john = Person("John Smith")
+john.talk()                                   # Hi, I'm John Smith                                 
 
 
