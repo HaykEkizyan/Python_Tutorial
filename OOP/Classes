@@ -107,4 +107,15 @@ print(me.hair_color)                                              # black
 john = Person("John Smith", 25)
 print(john.hair_color)                                            # black
 
+Class attributes are shared by all instances of the class.
 
+#3  Error
+
+class Student:
+    def __init__(self, name):
+        self.name = name
+    def sayHi(self):
+        print("Hi from " + self.name)
+s1 = Student("Amy")
+print(s1.age)                                                      # AttributeError: 'Student' object has no attribute 'age'
+    
