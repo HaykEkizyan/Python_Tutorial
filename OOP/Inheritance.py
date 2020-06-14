@@ -1,11 +1,11 @@
-                                                              Inheritance
+ """                                                             Inheritance
                                                               
 Inheritance provides a way to share functionality between classes.
 Imagine several classes, Cat, Dog, Rabbit and so on. Although they may differ in some ways (only Dog might have the method bark), 
  they are likely to be similar in others (all having the attributes color and name).   
 This similarity can be expressed by making them all inherit from a superclass Animal, which contains the shared functionality.
 To inherit a class from another class, put the superclass name in parentheses after the class name.
-
+"""
 #1
 
 class Animal:
@@ -25,12 +25,12 @@ hachi = Dog("Hachi", "brown")
 print(hachi.color)                                            # brown
 hachi.bark()                                                  # Woof
 
-
+"""
 A class that inherits from another class is called a subclass.
 A class that is inherited from is called a superclass.
 In the example above, Animal is the superclass, Dog is the subclass.
 If a class inherits from another with the same attributes or methods, it overrides them.
-
+"""
 #1.1
 
 class A:
@@ -62,7 +62,7 @@ c.method()                                                    # A method
 c.another_method()                                            # B method
 c.third_method()                                              # C method
 
-However, circular inheritance is not possible.
+# However, circular inheritance is not possible.
 
 #1.3
 
@@ -94,10 +94,10 @@ person_hayk = Person("Hayk")
 person_hayk.talk()                                            # Hi from Hayk
 
 #2 super
-
+"""
 The function super is a useful inheritance-related function that refers to the parent class. 
 It can be used to find the method with a certain name in an object's superclass.
-
+"""
 #2.1
 
 class A:
