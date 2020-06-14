@@ -72,4 +72,19 @@ me.talk()                                     # Hi, I'm Hayk Ekizyan
 john = Person("John Smith")
 john.talk()                                   # Hi, I'm John Smith                                 
 
+#1.3
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def talk(self):
+        print(f"Hi, I'm {self.name} and I'm {self.age}")
+me = Person("Hayk Ekizyan", 30)
+me.talk()                                                         # Hi, I'm Hayk Ekizyan and I'm 30
+john = Person("John Smith", 25)
+john.talk()                                                       # Hi, I'm John Smith and I'm 25
+
+
+
 
