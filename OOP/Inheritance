@@ -79,6 +79,19 @@ class C(B):
 c = C()
 c.a()                                                         # 2
 
+#1.4
+
+class People:
+    def __init__(self, name):
+        self.name = name
+    def talk(self):
+        print("Hi from " + self.name)
+
+class Person(People):
+    pass
+
+person_hayk = Person("Hayk")
+person_hayk.talk()                                            # Hi from Hayk
 
 #2 super
 
@@ -104,5 +117,6 @@ class A:
 class B(A):
     def spam(self):
         print(2)                                              # 2
-        super().spam()                                        # 1
+        super().spam()                                        # 1  """ super().spam() calls the spam method of the superclass."""
 B().spam()
+
