@@ -62,5 +62,25 @@ c.method()                                                    # A method
 c.another_method()                                            # B method
 c.third_method()                                              # C method
 
+However, circular inheritance is not possible.
+
+#1.3
+
+class A:
+    def a(self):
+        print(1)
+class B(A):
+    def a(self):
+        print(2)
+class C(B):
+    def c(self):
+        print(3)
+
+c = C()
+c.a()                                                         # 2
+
+
+
+
 
 
