@@ -31,4 +31,18 @@ A class that is inherited from is called a superclass.
 In the example above, Animal is the superclass, Dog is the subclass.
 If a class inherits from another with the same attributes or methods, it overrides them.
 
+#1.1
+
+class A:
+    def method(self):
+        print(1)
+
+class B(A):
+    def method(self):
+        print(2)
+
+B().method()                                                  # 2
+
+
+
 
