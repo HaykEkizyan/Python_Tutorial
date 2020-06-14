@@ -80,7 +80,29 @@ c = C()
 c.a()                                                         # 2
 
 
+#2 super
 
+The function super is a useful inheritance-related function that refers to the parent class. 
+It can be used to find the method with a certain name in an object's superclass.
 
+#2.1
 
+class A:
+    def spam(self):
+        print(1)
+class B(A):
+    def spam(self):
+        print(2)                                               # 2
+      # super().spam()
+B().spam()                                                   
 
+#2.2
+
+class A:
+    def spam(self):
+        print(1)
+class B(A):
+    def spam(self):
+        print(2)                                              # 2
+        super().spam()                                        # 1
+B().spam()
