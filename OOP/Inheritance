@@ -25,3 +25,10 @@ hachi = Dog("Hachi", "brown")
 print(hachi.color)                                            # brown
 hachi.bark()                                                  # Woof
 
+
+A class that inherits from another class is called a subclass.
+A class that is inherited from is called a superclass.
+In the example above, Animal is the superclass, Dog is the subclass.
+If a class inherits from another with the same attributes or methods, it overrides them.
+
+
