@@ -20,3 +20,25 @@ class Pizza:
 pizza = Pizza(["cheese", "tomato"])
 print(pizza.pineapple_allowed)                                        # 1
 pizza.pineapple_allowed = True                                        # AttributeError: can't set attribute
+
+#1.1 Example
+
+class Person:
+    def __init__(self, age):
+        self.age = age
+
+    @property
+    def isAdult(self):
+        if self.age > 18:
+            return True
+        else:
+            return False
+
+Hayk = Person(30)
+print(Hayk.isAdult)                                                   # True
+
+
+
+
+
+
