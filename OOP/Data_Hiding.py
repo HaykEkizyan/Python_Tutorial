@@ -70,4 +70,8 @@ s.print_egg()                                         # 7
 print(s._Spam__egg)                                   # 7
 print(s.__egg)                                        # AttributeError: 'Spam' object has no attribute '__egg'
 
+"""
 
+Basically, Python protects those members by internally changing the name to include the class name.
+
+"""
