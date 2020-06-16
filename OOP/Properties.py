@@ -37,6 +37,14 @@ class Person:
 Hayk = Person(30)
 print(Hayk.isAdult)                                                   # True
 
+"""
+
+ Properties can also be set by defining setter/getter functions.
+ The setter function sets the corresponding property's value.
+ The getter gets the value.
+ To define a setter, you need to use a decorator of the same name as the property, followed by a dot and the setter keyword.
+ The same applies to defining getter functions.
+ 
 
 
 
