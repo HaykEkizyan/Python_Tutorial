@@ -43,5 +43,31 @@ queue.pop()
 print(queue)                                           # Queue([0, 1, 2])
 print(queue._hiddenlist)                               # [0, 1, 2]
 
+"""
+
+In the code above, the attribute _hiddenlist is marked as private, but it can still be accessed in the outside code.
+The __repr__ magic method is used for string representation of the instance.
+
+"""
+
+"""
+
+ Strongly private methods and attributes have a double underscore at the beginning of their names. 
+This causes their names to be mangled, which means that they can't be accessed from outside the class.
+ The purpose of this isn't to ensure that they are kept private, but to avoid bugs 
+if there are subclasses that have methods or attributes with the same names.
+ Name mangled methods can still be accessed externally, but by a different name. 
+The method __privatemethod of class Spam could be accessed externally with _Spam__privatemethod.
+
+#2 Example
+
+class Spam:
+    __egg = 7
+    def print_egg(self):
+        print(self.__egg)
+s = Spam()
+s.print_egg()                                         # 7
+print(s._Spam__egg)                                   # 7
+print(s.__egg)                                        # AttributeError: 'Spam' object has no attribute '__egg'
 
 
