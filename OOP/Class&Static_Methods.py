@@ -21,5 +21,11 @@ class Rectangle:
 square = Rectangle.new_square(5)
 print(square.calculate_area())                                        # 25
 
+"""
 
-
+ new_square is a class method and is called on the class, rather than on an instance of the class. 
+It returns a new object of the class cls.
+ Technically, the parameters self and cls are just conventions; they could be changed to anything else. 
+However, they are universally followed, so it is wise to stick to using them.
+ 
+"""
