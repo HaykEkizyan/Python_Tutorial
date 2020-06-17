@@ -47,6 +47,76 @@ You said "Hello!"
 You said "Goodbye!"
 """
 
+"""
 
+The code above takes input from the user, and tries to match the first word with a command in verb_dict. 
+If a match is found, the corresponding function is called.
+
+"""
+
+"""
+
+The next step is to use classes to represent game objects.
+
+"""
+
+class GameObject:
+    class_name = ""
+    desc = ""
+    objects = {}
+
+    def __init__(self, name):
+        self.name = name
+        GameObject.objects[self.class_name] = self
+
+class Goblin(GameObject):
+    class_name = "goblin"
+    desc = "A foul creature"
+
+goblin = Goblin("Gobbly")
+
+def examine(noun):
+    if noun in GameObject.objects:
+        return GameObject.objects[noun].get_desc()
+    else:
+        return "There is no {} here.".format(noun)
+     
+     
+"""
+
+We created a Goblin class, which inherits from the GameObjects class.
+We also created a new function examine, which returns the objects description.
+Now we can add a new "examine" verb to our dictionary and try it out!
+
+"""
+
+verb_dict = {
+  "say": say,
+  "examine": examine,
+}
+
+"""
+
+Combine this code with the one in our previous example, and run the program.
+
+"""
+
+>>>
+: say Hello!
+You said "Hello!"
+
+: examine goblin
+goblin
+A foul creature
+
+: examine elf
+There is no elf here.
+:
+ 
+ """
+ 
+ Combine this code with the one in our previous example, and run the program.
+ 
+ """
 
  
