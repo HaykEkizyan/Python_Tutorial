@@ -19,4 +19,10 @@ from pathlib import Path
 path = Path("ecommerce")               """ ecommerce is a current package in the project 
 print(path.exists())                   # True
 
+#1.1
+
+from pathlib import Path
+
+path = Path("ecommerce1")             # """ ecommerce1 isn't a current package in the project
+print(path.exists())                  # False
 
