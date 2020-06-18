@@ -4,3 +4,8 @@ sheet = wb['Sheet1']
 cell = sheet['a1']
 cell = sheet.cell(2, 1)
 
+# print(cell.value) -> returns 1001, which is in A2 line at our file
+
+
+
+
