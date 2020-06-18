@@ -33,5 +33,10 @@ from pathlib import Path
 path = Path("emails")                 # """ mkdir() creates emails package in the project """
 print(path.mkdir())                   # None
 
+#2.1
 
+from pathlib import Path
+
+path = Path("emails")                 # """ rmdir() removes emails package from the project """
+print(path.rmdir())                   # None
 
