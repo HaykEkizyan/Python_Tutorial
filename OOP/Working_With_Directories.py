@@ -40,3 +40,12 @@ from pathlib import Path
 path = Path("emails")                 # """ rmdir() removes emails package from the project """
 print(path.rmdir())                   # None
 
+#3
+
+from pathlib import Path
+
+path = Path()
+for file in path.glob('*.py'):        # """ path.glob('*.py') returns all exists .py files in the project """
+    print(file)                       # app.py
+    
+    
