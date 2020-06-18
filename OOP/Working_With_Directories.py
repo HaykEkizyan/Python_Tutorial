@@ -48,4 +48,10 @@ path = Path()
 for file in path.glob('*.py'):        # """ path.glob('*.py') returns all exists .py files in the project """
     print(file)                       # app.py
     
-    
+#3.1
+
+from pathlib import Path
+
+path = Path()
+for file in path.glob('*'):           # """ path.glob('*') returns all exists files and directories in the project
+    print(file)                       # .idea \n app.py \n ecommerce \n venv
