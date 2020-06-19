@@ -27,3 +27,11 @@ number = random.randint(0, 9)
 chances = 0
 
 print("Guess a number (between 0 and 9):")
+
+while loop to count the number of chances
+while chances < 3:
+    # enter a number between 0 yo 9
+    guess = int(input())
+
+
+
