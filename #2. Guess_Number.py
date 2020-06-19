@@ -26,4 +26,4 @@ number = random.randint(0, 9)
 # number of chances to be given to the user to guess the number or it is the inputs given by user into input box here naumber of chances are 3
 chances = 0
 
-
+print("Guess a number (between 0 and 9):")
