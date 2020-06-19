@@ -34,7 +34,9 @@ while chances < 3:
 
     elif guess < number:                     # Check if the user entered number is smaller than the generated number
         print("Your guess was too low: Guess a number higher than", guess)
-            
+    
+     else:                                  # The user entered number is greater than the generated number
+        print("Your guess was too high: Guess a number lower than", guess)
             
             
             
