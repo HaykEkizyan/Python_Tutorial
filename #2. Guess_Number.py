@@ -39,4 +39,6 @@ while chances < 3:
         print("Your guess was too high: Guess a number lower than", guess)
             
      chances += 1                           # Increase the value of chance by 1  
-            
+ 
+if not chances < 3:                         # Check whether the user guessed the correct number  
+    print("YOU LOSE!!! The number is", number)
