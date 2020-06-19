@@ -38,5 +38,5 @@ while chances < 3:
      else:                                  # The user entered number is greater than the generated number
         print("Your guess was too high: Guess a number lower than", guess)
             
-            
+     chances += 1                           # Increase the value of chance by 1  
             
