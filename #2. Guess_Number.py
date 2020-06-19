@@ -23,3 +23,7 @@ print("Number guessing game")
 # randint function to generate the random number between 1 to 9
 number = random.randint(0, 9)
 
+# number of chances to be given to the user to guess the number or it is the inputs given by user into input box here naumber of chances are 3
+chances = 0
+
+
