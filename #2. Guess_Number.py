@@ -19,19 +19,14 @@ else:
 import random
 
 print("Number guessing game")
+number = random.randint(0, 9)           # "randint" function to generate the random number between 1 to 9
 
-# randint function to generate the random number between 1 to 9
-number = random.randint(0, 9)
-
-# number of chances to be given to the user to guess the number or it is the inputs given by user into input box here naumber of chances are 3
-chances = 0
-
-print("Guess a number (between 0 and 9):")
+chances = 0                             # Number of chances to be given to the user to guess the number or it is the 
+                                        # inputs given by user into input box here naumber of chances are 3
+print("Guess a number (between 0 and 9): ")
 
 while loop to count the number of chances
 while chances < 3:
-    # enter a number between 0 yo 9
-    guess = int(input())
-
-
+    guess = int(input())                # Enter a number between 0 yo 9
+    if guess == number:                 # Compare the user entered number with the number to be guessed
 
