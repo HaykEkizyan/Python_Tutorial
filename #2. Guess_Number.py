@@ -29,4 +29,12 @@ while loop to count the number of chances
 while chances < 3:
     guess = int(input())                # Enter a number between 0 yo 9
     if guess == number:                 # Compare the user entered number with the number to be guessed
+        print("Congratulation YOU WON!!!")   # If number entered by user is same as the generated number by randint
+                                             # function then break from loop using loop control statement "break"
 
+    elif guess < number:                     # Check if the user entered number is smaller than the generated number
+        print("Your guess was too low: Guess a number higher than", guess)
+            
+            
+            
+            
