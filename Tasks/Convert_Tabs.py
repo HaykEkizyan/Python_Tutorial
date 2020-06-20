@@ -13,4 +13,8 @@ will turn each tabulation character in code into x whitespace characters.
 def convertTabs(code, x):
     return code.replace('\t',' '*x)    # replace "\t" to " " and multple it "x" times
 
-print(convertTabs("\tyield\t", 7))  # "       yield       "
+print(convertTabs("\tyield\t", 7))                      # "       yield       "
+print(convertTabs("\treturn False", 4))                 # "    return False"
+print(convertTabs("", 8))                               # ""
+print(convertTabs("    for x in range(20)", 16))        # "    for x in range(20)"
+print(convertTabs("def add(x, y)\f\treturn x + y", 8))  # "def add(x, y)\f        return x + y"
