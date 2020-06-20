@@ -1,2 +1,4 @@
-a = 1, 2, 3
-print(''.split(a))
+def convertTabs(code, x):
+    return code.replace("\t", " " * x)
+
+print(convertTabs("\tyield\t", 7))
