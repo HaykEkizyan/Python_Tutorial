@@ -14,5 +14,5 @@ def listBeautifier(a):
         a_, *res, a = res
     return res
 print(listBeautifier([3, 4, 2, 4, 38, 4, 5, 3, 2]))        # [4, 38, 4]
-
+print(listBeautifier([1, 4, -5]))                          # [4]
 
