@@ -53,3 +53,8 @@ for letter in name:                  # go through all the 26 letters
     elif (letter == "Y"):
         print("..#....#..\n...#..#...\n....##....\n....##....\n....##....\n\n")
     elif (letter == "Z"):
+        print("..######..\n......#...\n.....#....\n....#.....\n..######..\n\n")
+    elif (letter == " "):
+        print("..........\n..........\n..........\n..........\n\n")
+    elif (letter == "."):
+        print("----..----\n\n")
