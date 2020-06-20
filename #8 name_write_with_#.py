@@ -58,3 +58,8 @@ for letter in name:                  # go through all the 26 letters
         print("..........\n..........\n..........\n..........\n\n")
     elif (letter == "."):
         print("----..----\n\n")
+
+
+
+
+
