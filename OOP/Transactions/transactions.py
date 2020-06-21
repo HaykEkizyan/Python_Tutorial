@@ -1,4 +1,6 @@
 import openpyxl as xl
+from openpyxl.chart import BarChart, Reference
+
 wb = xl.load_workbook('transactions.xlsx')
 sheet = wb['Sheet1']
 cell = sheet['a1']
@@ -10,4 +12,9 @@ for row in range(2, sheet.max_row + 1):
     corrected_price_cell = sheet.cell(row, 4)       # D column's number is 4
     corrected_price_cell.value = corrected_price
 
-wb.save('transactions2.xlsx')                       # we created new file in our directory
+                                                    # use the Reference class to select a range for loop
+values = Reference(sheet,                           # we add sheet argument
+          min_row=2,
+          max_row=sheet.max_row)                    # maximum row in this sheet
+
+wb.save('transactions2.xlsx')                       # we created a new file in our directory
