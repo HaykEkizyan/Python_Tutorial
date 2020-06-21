@@ -15,6 +15,8 @@ for row in range(2, sheet.max_row + 1):
                                                     # use the Reference class to select a range for loop
 values = Reference(sheet,                           # we add sheet argument
           min_row=2,
-          max_row=sheet.max_row)                    # maximum row in this sheet
+          max_row=sheet.max_row,                    # maximum row in this sheet
+          min_col=4,
+          max_col=4)                                # limiting the range of cells we're selecting to the fourth column
 
 wb.save('transactions2.xlsx')                       # we created a new file in our directory
