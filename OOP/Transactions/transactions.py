@@ -2,6 +2,6 @@ import openpyxl as xl
 wb = xl.load_workbook('transactions.xlsx')
 sheet = wb['Sheet1']
 cell = sheet['a1']
-cell = sheet.cell(2, 1)
+cell = sheet.cell(1, 2)
 
-print(sheet.max_row)
+print(sheet.max_row)      # 4
