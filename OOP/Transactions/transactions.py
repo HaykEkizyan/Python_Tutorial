@@ -4,5 +4,6 @@ sheet = wb['Sheet1']
 cell = sheet['a1']
 cell = sheet.cell(1, 2)
 
-for row in range(1, sheet.max_row + 1):
-    print(row)                              # 1 \n 2 \n 3 \n 4
+for row in range(2, sheet.max_row + 1):   # start from 2 for ignore 1st row: "price"
+    cell = sheet.cell(row, 3)             # 3 is a number of column
+    print(cell.value)                     # 5.95 \n 6.95 \n 7.95
