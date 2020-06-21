@@ -4,4 +4,4 @@ sheet = wb['Sheet1']
 cell = sheet['a1']
 cell = sheet.cell(1, 2)
 
-print(sheet.max_row)      # 4
+print(cell.value)      # product_id
