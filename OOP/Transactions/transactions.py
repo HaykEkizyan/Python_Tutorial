@@ -4,6 +4,10 @@ sheet = wb['Sheet1']
 cell = sheet['a1']
 cell = sheet.cell(1, 2)
 
-for row in range(2, sheet.max_row + 1):   # start from 2 for ignore 1st row: "price"
-    cell = sheet.cell(row, 3)             # 3 is a number of column
-    print(cell.value)                     # 5.95 \n 6.95 \n 7.95
+for row in range(2, sheet.max_row + 1):
+    cell = sheet.cell(row, 3)
+    corrected_price = cell.value * 0.9              # we need to get 90% of our current prices to the D column
+    corrected_price_cell = sheet.cell(row, 4)       # D column's number is 4
+    corrected_price_cell.value = corrected_price
+
+wb.save('transactions2.xlsx')                       # we created new file in our directory
