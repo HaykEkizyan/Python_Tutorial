@@ -18,6 +18,6 @@ Implement a function that, given a feedback and the size of the screen, splits t
 import textwrap                             # at first import textwrap library
 
 def feedbackReview(feedback, size):         # our function has 2 arguments
-    print ...
+    print(textwrap.fill(feedback, size))    # feedback as a string, size as a width
 
 
