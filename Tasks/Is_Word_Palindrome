@@ -5,4 +5,6 @@ A string is considered to be a palindrome if it reads the same in both direction
 
 """
 
+def isWordPalindrome(word):         # Implement the missing code, denoted by ellipses.
+    return word == word[...]
 
