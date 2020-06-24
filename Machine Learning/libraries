@@ -1,0 +1,11 @@
+Libraries
+
+1. Numpy
+2. Pandas
+3. MatPlotLib
+4. Scikit-Learn
+
+Tools
+
+1. As a code editor it's recommended to use https://jupyter.org/
+2. To install jupyter, we are going to use platform called anaconda https://www.anaconda.com/products/individual
