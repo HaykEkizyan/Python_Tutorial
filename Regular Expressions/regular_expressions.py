@@ -35,7 +35,15 @@ else:
 """
 
  The above example checks if the pattern "spam" matches the string and prints "Match" if it does.
- 
+ Here the pattern is a simple word, but there are various characters, which would have special 
+meaning when they are used in a regular expression.
 
 """
 
+"""
+
+ Other functions to match patterns are re.search and re.findall.
+ The function re.search finds a match of a pattern anywhere in the string.
+ The function re.findall returns a list of all substrings that match a pattern.
+ 
+"""
