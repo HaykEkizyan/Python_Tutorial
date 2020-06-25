@@ -47,3 +47,28 @@ meaning when they are used in a regular expression.
  The function re.findall returns a list of all substrings that match a pattern.
  
 """
+
+# 2
+
+import re
+
+pattern = r"spam"
+
+if re.match(pattern, "eggspamsausagespam"):
+    print("Match")                                  # In the example above, the match function did not match
+else:                                               #  the pattern, as it looks at the beginning of the string.
+    print("No match")                               # No match
+
+if re.search(pattern, "eggspamsausagespam"):        # Match - The search function found a match in the string.
+    print("Match")
+else:
+    print("No match")
+
+print(re.findall(pattern, "eggspamsausagespam"))    # ['spam', 'spam']
+
+"""
+
+ The function re.finditer does the same thing as re.findall, except it returns an iterator, rather than a list.
+
+"""
+
