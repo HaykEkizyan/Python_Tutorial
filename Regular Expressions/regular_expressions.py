@@ -72,3 +72,26 @@ print(re.findall(pattern, "eggspamsausagespam"))    # ['spam', 'spam']
 
 """
 
+"""
+
+ The regex search returns an object with several methods that give details about it.
+ These methods include group which returns the string matched, start and end which 
+return the start and ending positions of the first match, and span which returns
+the start and end positions of the first match as a tuple.
+
+"""
+
+# 3
+
+import re
+
+pattern = r"pam"
+
+match = re.search(pattern, "eggspamsausage")
+if match:
+    print(match.group())                        # pam
+    print(match.start())                        # 4
+    print(match.end())                          # 7
+    print(match.span())                         # (4, 7)
+    
+    
