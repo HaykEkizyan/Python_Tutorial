@@ -14,4 +14,7 @@ Given the password you always use, your task is to encrypt it using the permutat
 
 """
 
+def permutationCipher(password, key):
+    table = ...
+    return password.translate(table)
 
