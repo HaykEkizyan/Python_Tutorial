@@ -100,4 +100,24 @@ if match:
     print(match.end())                          # 7
     print(match.span())                         # (4, 7)
 
+"""
+
+One of the most important re methods that use regular expressions is sub.
+Syntax:
+
+re.sub(pattern, repl, string, count=0)
+
+This method replaces all occurrences of the pattern in string with repl, substituting all occurrences, 
+unless count provided. This method returns the modified string.
+
+"""
+
+# 4
+
+import re
+
+str = "My name is Hayk. Hi Hayk."
+pattern = r"Hayk"
+newstr = re.sub(pattern, "Anna", str)               # My name is Anna. Hi Anna.
+print(newstr)
 
