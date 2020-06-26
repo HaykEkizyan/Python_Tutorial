@@ -6,7 +6,7 @@ A character class is created by putting the characters it matches inside square 
 """
 
 # 1
-"""
+
 import re
 
 pattern = r"[aeiou]"
@@ -19,7 +19,7 @@ if re.search(pattern, "qwertyuiop"):
 
 if re.search(pattern, "rhythm myths"):
     print("Match 3")
-"""
+
 # The pattern [aeiou] in the search function matches all strings that contain any one of the characters defined.
 
 """
@@ -48,7 +48,7 @@ if re.search(pattern, "E3"):
 if re.search(pattern, "1ab"):
     print("Match 3")                # Match 3
 
-#2.1
+# 2.1
 
 import re
 
@@ -64,3 +64,21 @@ if re.search(pattern, "1ab"):
    print("Match 3")
 
 # The pattern in the example above matches strings that contain two alphabetic uppercase letters followed by a digit.
+
+# 2.2
+
+import re
+
+pattern = r"[1-5][0-9]"
+
+if re.search(pattern, "11"):
+    print("In the range")           # In the range
+
+if re.search(pattern, "59"):
+    print("In the range")           # In the range
+
+if re.search(pattern, "89"):
+    print("In the range")
+
+# The pattern in the example above any two-digit number from 10 to 59
+
