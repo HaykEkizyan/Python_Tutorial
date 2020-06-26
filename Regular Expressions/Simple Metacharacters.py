@@ -31,3 +31,29 @@ if re.match(pattern, "gray"):
 if re.match(pattern, "blue"):
     print("Match 3")
 
+"""
+
+The next two metacharacters are ^ and $.
+These match the start and end of a string, respectively.
+
+"""
+
+import re
+
+pattern = r"^gr.y$"
+
+if re.match(pattern, "grey"):
+    print("Match 1")                # Match 1
+
+if re.match(pattern, "gray"):
+    print("Match 2")                # Match 2
+
+if re.match(pattern, "stingray"):
+    print("Match 3")
+
+"""
+
+The pattern "^gr.y$" means that the string should start with gr, 
+then follow with any character, except a newline, and end with y.
+
+"""
