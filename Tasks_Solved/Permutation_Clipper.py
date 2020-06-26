@@ -15,6 +15,9 @@ Given the password you always use, your task is to encrypt it using the permutat
 """
 
 def permutationCipher(password, key):
-    table = ...
+    table = {i + 97 : ord(key[i]) for i in range(0, 26)}
     return password.translate(table)
+
+print(permutationCipher("iamthebest", "zabcdefghijklmnopqrstuvwxy"))        # hzlsgdadrs
+print(permutationCipher("codesignalrocks", "ebtyfkudagizxmvcnojqwlsrhp"))   # tvyfjaumezovtij
 
