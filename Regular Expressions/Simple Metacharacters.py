@@ -11,6 +11,23 @@ This can mean putting three or four backslashes in a row to do all the escaping.
 To avoid this, you can use a raw string, which is a normal string with an "r" in front of it.
 We saw usage of raw strings in the previous lesson.
 
+The first metacharacter we will look at is . (dot).
+This matches any character, other than a new line.
+
 """
 
+# 1
+
+import re
+
+pattern = r"gr.y"
+
+if re.match(pattern, "grey"):
+    print("Match 1")                # Match 1
+
+if re.match(pattern, "gray"):
+    print("Match 2")                # Match 2
+
+if re.match(pattern, "blue"):
+    print("Match 3")
 
