@@ -82,3 +82,37 @@ if re.search(pattern, "89"):
 
 # The pattern in the example above any two-digit number from 10 to 59
 
+"""
+
+Place a ^ at the start of a character class to invert it.
+This causes it to match any character other than the ones included.
+Other metacharacters such as $ and ., have no meaning within character classes.
+The metacharacter ^ has no meaning unless it is the first character in a class.
+
+"""
+
+# 3
+
+import re
+
+pattern = r"[^A-Z]"
+
+if re.search(pattern, "This is all quiet"):
+    print("Match 1")                            # Match 1
+
+if re.search(pattern, "AbCdEfG123"):
+    print("Match 2")                            # Match 2
+
+if re.search(pattern, "THISISALLSHOUTING"):
+    print("Match 3")
+
+if re.search(pattern, "THIS IS ALL SHOUTING"):
+    print("Match 4")                            # Match 4
+
+"""
+
+The pattern [^A-Z] excludes uppercase strings.
+Note, that the ^ should be inside the brackets to invert the character class.
+
+"""
+
