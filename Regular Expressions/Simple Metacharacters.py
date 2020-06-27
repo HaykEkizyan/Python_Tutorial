@@ -86,3 +86,34 @@ if re.match(pattern, "spam"):
     print("Match 3")
 
 # The example above matches strings that start with "egg" and follow with zero or more "spam"s.
+
+"""
+
+The metacharacter + is very similar to *, except it means "one or more repetitions", as opposed to 
+"zero or more repetitions".
+
+"""
+
+# 2.1
+
+import re
+
+pattern = r"g+"
+
+if re.match(pattern, "g"):
+    print("Match 1")                        # Match 1
+
+if re.match(pattern, "ggggggggggggg"):
+    print("Match 2")                        # Match 2
+
+if re.match(pattern, "abc"):
+    print("Match 3")
+
+"""
+
+To summarize:
+* matches 0 or more occurrences of the preceding expression.
++ matches 1 or more occurrence of the preceding expression.
+
+"""
+
