@@ -39,11 +39,18 @@ pattern = r"a(bc)(de)(f(g)h)i"
 
 match = re.match(pattern, "abcdefghijklmnop")
 if match:
-    print(match.group())
-    print(match.group(0))
-    print(match.group(1))
-    print(match.group(2))
-    print(match.groups())
+    print(match.group())                        # abcdefghi
+    print(match.group(0))                       # abcdefghi
+    print(match.group(1))                       # bc
+    print(match.group(2))                       # de
+    print(match.groups())                       # ('bc', 'de', 'fgh', 'g')
 
 # Groups can be nested.
+
+# 2.1
+
+x = r"1(23)(4(56)78)9(0)"
+y = re.match(x, "1234567890")
+print(y.group(3))                               # 56
+
 
