@@ -120,3 +120,26 @@ Our regex contains three groups:
 
 """
 
+# 1
+
+import re
+
+pattern = r"([\w\.-]+)@([\w\.-]+)(\.[\w\.]+)"
+str = "Please contact info@sololearn.com for instance"
+
+match = re.search(pattern, str)
+if match:
+   print(match.group())                                     # info@sololearn.com
+
+
+"""
+
+In case the string contains multiple email addresses, we could use the re.findall method instead of re.search, 
+to extract all email addresses.
+
+The regex in this example is for demonstration purposes only.
+A much more complex regex is required to fully validate an email address.
+
+In our example, the dot character preceded by a backslash to treat it as a character.
+"""
+
