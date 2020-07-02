@@ -55,4 +55,13 @@ except ZeroDivisionError:
 else:
     print(5)
 
+# 2.1
 
+try:
+    print(1)                        # 1
+    print(1 + "1" == 2)
+    print(2)
+except TypeError:
+    print(3)                        # 3
+else:
+    print(4)
