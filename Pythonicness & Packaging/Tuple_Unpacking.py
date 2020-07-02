@@ -28,4 +28,7 @@ print(b)                                    # 2
 print(c)                                    # [3, 4, 5, 6, 7, 8]
 print(d)                                    # 9
 
+# 2.1
 
+a, b, c, d, *e, f, g = range(20)
+print(len(e))                               # 14
