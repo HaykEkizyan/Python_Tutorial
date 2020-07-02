@@ -7,16 +7,18 @@ With the for or while loop, the code within it is called if the loop finishes no
 
 """
 
+# 1
+
 for i in range(10):
     if i == 999:
         print(1)
         break
 else:
-    print("Unbroken 1")
+    print("Unbroken 1")             # Unbroken 1
 
 for i in range(10):
     if i == 5:
-        print(1)
+        print(1)                    # 1
         break
 else:
     print("Unbroken 2")
@@ -24,4 +26,11 @@ else:
 # The first for loop executes normally, resulting in the printing of "Unbroken 1".
 # The second loop exits due to a break, which is why it's else statement is not executed.
 
+# 1.1
 
+for i in range(10):
+    if i > 5:
+        print(i)                    # 6
+        break
+else:
+    print("7")
