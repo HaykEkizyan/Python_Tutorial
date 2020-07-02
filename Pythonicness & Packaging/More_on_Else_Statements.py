@@ -34,3 +34,25 @@ for i in range(10):
         break
 else:
     print("7")
+
+
+# The else statement can also be used with try/except statements.
+# In this case, the code within it is only executed if no error occurs in the try statement.
+
+# 2
+
+try:
+    print(1)                        # 1
+except ZeroDivisionError:
+    print(2)
+else:
+    print(3)                        # 3
+
+try:
+    print(1/0)
+except ZeroDivisionError:
+    print(4)                        # 4
+else:
+    print(5)
+
+
