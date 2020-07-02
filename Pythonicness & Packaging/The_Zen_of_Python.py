@@ -32,4 +32,19 @@ If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 
+
+Some lines in the Zen of Python may need more explanation.
+Explicit is better than implicit: It is best to spell out exactly what your code is doing.
+This is why adding a numeric string to an integer requires explicit conversion, rather than having it
+happen behind the scenes, as it does in other languages.
+Flat is better than nested: Heavily nested structures (lists of lists, of lists, and on and on…) should be avoided.
+Errors should never pass silently: In general, when an error occurs, you should output some sort of error message,
+rather than ignoring it.
+
+There are 20 principles in the Zen of Python, but only 19 lines of text.
+The 20th principle is a matter of opinion, but our interpretation is that the blank line means "Use whitespace".
+
+The line "There should be one - and preferably only one - obvious way to do it" references and contradicts
+the Perl language philosophy that there should be more than one way to do it.
+
 """
