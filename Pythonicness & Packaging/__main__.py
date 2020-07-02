@@ -25,4 +25,29 @@ If this file is being imported from another module, __name__ will be set to the 
 
 """
 
+# If we save the code from our previous example as a file called sololearn.py,
+# we can then import it to another script as a module, using the name sololearn.
+
+# 2
+
+# sololearn.py
+
+    def function():
+        print("This is a module function")
+
+    if __name__=="__main__":
+        print("This is a script")
+
+# some_script.py
+
+    import sololearn
+
+    sololearn.function()
+
+Result:
+    >>>
+    This is a module function
+    >>>
+
+# Basically, we've created a custom module called sololearn, and then used it in another script.
 
