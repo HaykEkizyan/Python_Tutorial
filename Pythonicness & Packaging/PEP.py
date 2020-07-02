@@ -13,4 +13,17 @@ It contains a number of guidelines in reference to variable names, which are sum
 PEP 8 also recommends using spaces around operators and after commas to increase readability.
 However, whitespace should not be overused. For instance, avoid having any space directly inside any type of brackets.
 
+
+Other PEP 8 suggestions include the following:
+- lines shouldn't be longer than 80 characters;
+- 'from module import *' should be avoided;
+- there should only be one statement per line.
+
+It also suggests that you use spaces, rather than tabs, to indent.
+However, to some extent, this is a matter of personal preference. If you use spaces, only use 4 per line.
+It's more important to choose one and stick to it.
+
+
+
+
 """
