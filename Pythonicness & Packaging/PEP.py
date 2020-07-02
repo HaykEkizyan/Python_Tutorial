@@ -23,7 +23,13 @@ It also suggests that you use spaces, rather than tabs, to indent.
 However, to some extent, this is a matter of personal preference. If you use spaces, only use 4 per line.
 It's more important to choose one and stick to it.
 
+The most important advice in the PEP is to ignore it when it makes sense to do so.
+Don't bother with following PEP suggestions when it would cause your code to be less readable;
+inconsistent with the surrounding code; or not backwards compatible.
+However, by and large, following PEP 8 will greatly enhance the quality of your code.
 
-
+Some other notable PEPs that cover code style:
+PEP 20: The Zen of Python
+PEP 257: Style Conventions for Docstrings
 
 """
