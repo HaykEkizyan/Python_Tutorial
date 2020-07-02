@@ -27,3 +27,6 @@ msg = "Logout" if status == 1 else "Login"
 print(msg)
 
 # The ternary operator is so called because, unlike most operators, it takes three arguments.
+
+b=1 if 2+2==5 else 2
+print(b)
