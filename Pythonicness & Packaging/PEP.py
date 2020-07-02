@@ -10,4 +10,7 @@ It contains a number of guidelines in reference to variable names, which are sum
 - constants (variables that never change value) should be CAPS_WITH_UNDERSCORES;
 - names that would clash with Python keywords (such as 'class' or 'if') should have a trailing underscore.
 
+PEP 8 also recommends using spaces around operators and after commas to increase readability.
+However, whitespace should not be overused. For instance, avoid having any space directly inside any type of brackets.
+
 """
